@@ -4,29 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bot Status - LISAv1BOT</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
-        }
-        .status {
-            font-size: 24px;
-            font-weight: bold;
-            color: green;
-        }
-        a {
-            text-decoration: none;
-            color: blue;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>LISAv1BOT Status</h1>
-    <p>Bot Developer: <strong>Dhananjaya</strong></p>
-    <p>Bot Channel: <a href="https://t.me/DLKDevelopers" target="_blank">@DLKDevelopers</a></p>
-    <p>Bot Link: <a href="https://t.me/LISAv1BOT" target="_blank">@LISAv1BOT</a></p>
-    <p class="status">✅ Bot is Online</p>
+    <div class="container">
+        <h1>🤖 Lisa Status</h1>
+        <p>Bot Developer: <strong>Dhananjaya</strong></p>
+        <p>Bot Channel: <a href="https://t.me/DLKDevelopers" target="_blank">@DLKDevelopers</a></p>
+        <p>Bot Link: <a href="https://t.me/LISAv1BOT" target="_blank">@LISAv1BOT</a></p>
+        <p id="status-text" class="status">Checking bot status...</p>
+        <button onclick="updateStatus()">🔄 Refresh Status</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
