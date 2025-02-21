@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bot Status - LISAv1BOT</title>
+    <title>LISA Bot Status</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>🤖 Lisa Status</h1>
-        <p>Bot Developer: <strong>Dhananjaya</strong></p>
-        <p>Bot Channel: <a href="https://t.me/DLKDevelopers" target="_blank">@DLKDevelopers</a></p>
-        <p>Bot Link: <a href="https://t.me/LISAv1BOT" target="_blank">@LISAv1BOT</a></p>
-        <p id="status-text" class="status">Checking bot status...</p>
-        <button onclick="updateStatus()">🔄 Refresh Status</button>
+        <img src="bg.jpg" alt="Background Image" class="bg">
+        <h1>LISA Bot Status</h1>
+        <p>Check the status of <a href="https://t.me/LISAv1BOT" target="_blank">LISA Bot</a>.</p>
+        <div class="status">
+            <p>Bot Status: <span id="bot-status">Loading...</span></p>
+        </div>
+        <div class="social-icons">
+            <a href="https://t.me/DLKDevelopers" target="_blank"><img src="telegram.png" alt="Telegram"></a>
+            <a href="https://github.com/yourusername" target="_blank"><img src="github.png" alt="GitHub"></a>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        async function checkBotStatus() {
+            try {
+                let response = await fetch("https://api.telegram.org/botYOUR_BOT_TOKEN/getMe");
+                let data = await response.json();
+                document.getElementById("bot-status").textContent = data.ok ? "Online ✅" : "Offline ❌";
+            } catch {
+                document.getElementById("bot-status").textContent = "Offline ❌";
+            }
+        }
+        checkBotStatus();
+    </script>
 </body>
 </html>
