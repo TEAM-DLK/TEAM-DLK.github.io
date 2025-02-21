@@ -24,28 +24,27 @@
         h2 {
             color: #333;
         }
-        .social-links a {
-            margin: 0 10px;
+        .social-links ul {
+            list-style-type: none; /* Removes default list bullets */
+            padding: 0;
+        }
+        .social-links li {
+            margin: 10px 0;
+            font-size: 18px;
             color: #333;
+        }
+        .social-links li::before {
+            content: "•"; /* Adds bullet points */
+            margin-right: 10px;
+            color: #007bff; /* Change bullet color */
+        }
+        .social-links a {
             text-decoration: none;
-            font-size: 20px;
+            color: #333;
             transition: color 0.3s;
         }
         .social-links a:hover {
             color: #007bff; /* Hover effect */
-        }
-        .social-links a i {
-            margin-right: 8px; /* Space between icon and text */
-        }
-        .bot-list ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .bot-list li {
-            background-color: #fff;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
         }
         .profile img {
             max-width: 150px;
@@ -71,12 +70,14 @@
 
     <section class="social-links">
         <h2>Follow Me</h2>
-        <a href="https://t.me/DLKDevelopers"><i class="fab fa-telegram"></i> Telegram Channel</a>
-        <a href="https://github.com/TEAM-DLK"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://facebook.com/DHANANJAYA.MADHUSHANKA.0"><i class="fab fa-facebook"></i> Facebook</a>
-        <a href="https://youtube.com/djdoozy"><i class="fab fa-youtube"></i> YouTube</a>
-        <a href="https://open.spotify.com/artist/19f7OsRfhI2yRY7csibcD2"><i class="fab fa-spotify"></i> Spotify</a>
-        <a href="https://on.soundcloud.com/VnSXer1z4AdeeZVP7"><i class="fab fa-soundcloud"></i> SoundCloud</a>
+        <ul>
+            <li><a href="https://t.me/DLKDevelopers"><i class="fab fa-telegram"></i> Telegram Channel</a></li>
+            <li><a href="https://github.com/TEAM-DLK"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://facebook.com/DHANANJAYA.MADHUSHANKA.0"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://youtube.com/djdoozy"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="https://open.spotify.com/artist/19f7OsRfhI2yRY7csibcD2"><i class="fab fa-spotify"></i> Spotify</a></li>
+            <li><a href="https://on.soundcloud.com/VnSXer1z4AdeeZVP7"><i class="fab fa-soundcloud"></i> SoundCloud</a></li>
+        </ul>
     </section>
 
     <section class="bot-list">
