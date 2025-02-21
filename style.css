@@ -1,41 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #111;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     color: white;
-    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('https://via.placeholder.com/1500x800'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section#home {
+    margin-top: 60px; /* to avoid being hidden behind the fixed navbar */
+}
+
+ul {
+    list-style: none;
     padding: 0;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+ul li {
+    margin: 10px 0;
 }
 
-.bg {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    opacity: 0.2;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
 }
 
-h1 {
-    font-size: 3rem;
-    margin: 20px 0;
-}
-
-.status {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-
-.social-icons img {
-    width: 40px;
-    margin: 10px;
+footer p {
+    margin: 0;
 }
