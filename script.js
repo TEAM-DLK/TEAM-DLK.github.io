@@ -1,25 +1,20 @@
-async function sendMessage() {
-    const userInput = document.getElementById("userInput").value;
-    if (!userInput) return;
+function updateStatus() {
+    let statusText = document.getElementById("status-text");
 
-    const chatBox = document.getElementById("chat-box");
-    chatBox.innerHTML += `<p><b>You:</b> ${userInput}</p>`;
+    // Simulate bot status (replace with actual API request later)
+    let botOnline = Math.random() > 0.3;  // 70% chance online, 30% offline
 
-    document.getElementById("userInput").value = "";
-
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
-        method: "POST",
-        headers: {
-            "Authorization": "Bearer YOUR_OPENAI_API_KEY",
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            model: "gpt-4",
-            messages: [{ role: "user", content: userInput }]
-        })
-    });
-
-    const data = await response.json();
-    const reply = data.choices[0].message.content;
-    chatBox.innerHTML += `<p><b>Bot:</b> ${reply}</p>`;
+    if (botOnline) {
+        statusText.innerHTML = "✅ Bot is Online";
+        statusText.className = "status online";
+    } else {
+        statusText.innerHTML = "❌ Bot is Offline";
+        statusText.className = "status offline";
+    }
 }
+
+// Update status every 10 seconds automatically
+setInterval(updateStatus, 10000);
+
+// Initial status check
+updateStatus();
