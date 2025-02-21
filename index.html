@@ -4,89 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DLK DEVELOPER</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-            margin-top: 10px;
-        }
-        h2 {
-            color: #333;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #333;
-            text-decoration: none;
-        }
-        .bot-list ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .bot-list li {
-            background-color: #fff;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        .profile img {
-            max-width: 150px;
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>DLK DEVELOPER</h1>
-        <div class="profile">
-            <img src="https://files.catbox.moe/4t4h6a.jpg" alt="Profile Picture">
+        <div class="logo">
+            <img src="https://files.catbox.moe/4t4h6a.jpg" alt="Profile Picture" />
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#social">Social Links</a></li>
+                <li><a href="#bots">My Bots</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#social">Social Links</a>
-        <a href="#bots">My Bots</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to DLK DEVELOPER</h1>
+            <p>Your go-to platform for Telegram bots, remixes, and more</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm Dhananjaya Madhusanka, also known as DLK DEVELOPER. I'm a music producer, Telegram bot developer, and website developer from Sri Lanka. I'm passionate about creating cool bots and music remixes!</p>
+        <p><strong>Name:</strong> Dhananjaya Madhusanka (DLK DEVELOPER)</p>
         <p><strong>Birthday:</strong> April 20, 2002</p>
         <p><strong>Relationship:</strong> Single</p>
-        <p><strong>Location:</strong> Sri Lanka 🇱🇰</p>
+        <p><strong>From:</strong> Sri Lanka 🇱🇰</p>
+        <p><strong>Skills:</strong> Music Producer (Remix), Telegram Bot Developer, Website Developer</p>
     </section>
 
     <section id="social">
         <h2>Follow Me</h2>
-        <a href="https://t.me/DLKDevelopers">Telegram Channel</a>
-        <a href="https://github.com/TEAM-DLK">GitHub</a>
-        <a href="https://facebook.com/DHANANJAYA.MADHUSHANKA.0">Facebook</a>
-        <a href="https://youtube.com/djdoozy">YouTube</a>
-        <a href="https://open.spotify.com/artist/19f7OsRfhI2yRY7csibcD2">Spotify</a>
-        <a href="https://on.soundcloud.com/VnSXer1z4AdeeZVP7">SoundCloud</a>
+        <ul>
+            <li><a href="https://t.me/DLKDevelopers">Telegram Channel</a></li>
+            <li><a href="https://github.com/TEAM-DLK">GitHub</a></li>
+            <li><a href="https://facebook.com/DHANANJAYA.MADHUSHANKA.0">Facebook</a></li>
+            <li><a href="https://youtube.com/djdoozy">YouTube</a></li>
+            <li><a href="https://open.spotify.com/artist/19f7OsRfhI2yRY7csibcD2">Spotify</a></li>
+            <li><a href="https://on.soundcloud.com/VnSXer1z4AdeeZVP7">SoundCloud</a></li>
+        </ul>
     </section>
 
     <section id="bots" class="bot-list">
@@ -102,5 +64,11 @@
         <h2>Contact</h2>
         <p>Email: <a href="mailto:prodoozy@icloud.com">prodoozy@icloud.com</a></p>
     </section>
+
+    <footer>
+        <p>&copy; 2025 DLK DEVELOPER</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
