@@ -8,44 +8,52 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: black;
+            color: white;
             margin: 0;
             padding: 0;
         }
+
         header {
-            background-color: #333;
+            background-color: #111;
             color: white;
             text-align: center;
             padding: 20px;
         }
+
         section {
             padding: 20px;
         }
-        h2 {
-            color: #333;
+
+        h1, h2, p, li, a {
+            color: white;
         }
+
+        a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
         .social-links ul {
-            list-style-type: none; /* Removes default list bullets */
+            list-style-type: none;
             padding: 0;
         }
+
         .social-links li {
             margin: 10px 0;
             font-size: 18px;
-            color: #333;
         }
+
         .social-links li::before {
-            content: "•"; /* Adds bullet points */
+            content: "•";
             margin-right: 10px;
-            color: #007bff; /* Change bullet color */
+            color: white;
         }
-        .social-links a {
-            text-decoration: none;
-            color: #333;
-            transition: color 0.3s;
-        }
-        .social-links a:hover {
-            color: #007bff; /* Hover effect */
-        }
+
         .profile img {
             max-width: 150px;
             border-radius: 50%;
@@ -70,6 +78,7 @@
             <img src="https://files.catbox.moe/dj35id.MP4" alt="Profile Picture">
         </div>
     </header>
+
     <section class="social-links">
         <h2>FOLLOW ME</h2>
         <ul>
