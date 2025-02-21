@@ -3,34 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LISA Bot Status</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>DLK DEVELOPER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .bot-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .bot-list li {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .profile img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="bg.jpg" alt="Background Image" class="bg">
-        <h1>LISA Bot Status</h1>
-        <p>Check the status of <a href="https://t.me/LISAv1BOT" target="_blank">LISA Bot</a>.</p>
-        <div class="status">
-            <p>Bot Status: <span id="bot-status">Loading...</span></p>
+    <header>
+        <h1>DLK DEVELOPER</h1>
+        <div class="profile">
+            <img src="https://files.catbox.moe/4t4h6a.jpg" alt="Profile Picture">
         </div>
-        <div class="social-icons">
-            <a href="https://t.me/DLKDevelopers" target="_blank"><img src="telegram.png" alt="Telegram"></a>
-            <a href="https://github.com/yourusername" target="_blank"><img src="github.png" alt="GitHub"></a>
-        </div>
-    </div>
+    </header>
 
-    <script>
-        async function checkBotStatus() {
-            try {
-                let response = await fetch("https://api.telegram.org/botYOUR_BOT_TOKEN/getMe");
-                let data = await response.json();
-                document.getElementById("bot-status").textContent = data.ok ? "Online ✅" : "Offline ❌";
-            } catch {
-                document.getElementById("bot-status").textContent = "Offline ❌";
-            }
-        }
-        checkBotStatus();
-    </script>
+    <section>
+        <h2>About Me</h2>
+        <p>Hi, I'm Dhananjaya Madhusanka, also known as DLK DEVELOPER. I'm a music producer, Telegram bot developer, and website developer from Sri Lanka. I'm passionate about creating cool bots and music remixes!</p>
+        <p><strong>Birthday:</strong> April 20, 2002</p>
+        <p><strong>Relationship:</strong> Single</p>
+        <p><strong>Location:</strong> Sri Lanka 🇱🇰</p>
+    </section>
+
+    <section class="social-links">
+        <h2>Follow Me</h2>
+        <a href="https://t.me/DLKDevelopers">Telegram Channel</a>
+        <a href="https://github.com/TEAM-DLK">GitHub</a>
+        <a href="https://facebook.com/DHANANJAYA.MADHUSHANKA.0">Facebook</a>
+        <a href="https://youtube.com/djdoozy">YouTube</a>
+        <a href="https://open.spotify.com/artist/19f7OsRfhI2yRY7csibcD2">Spotify</a>
+        <a href="https://on.soundcloud.com/VnSXer1z4AdeeZVP7">SoundCloud</a>
+    </section>
+
+    <section class="bot-list">
+        <h2>My Telegram Bots</h2>
+        <ul>
+            <li><a href="https://t.me/LISAv1BOT">LISAv1BOT</a></li>
+            <li><a href="https://t.me/DLKMBOT">DLKMBOT</a></li>
+            <li><a href="https://t.me/MPEGROBOT">MPEGROBOT</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:prodoozy@icloud.com">prodoozy@icloud.com</a></p>
+    </section>
 </body>
 </html>
