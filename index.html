@@ -106,11 +106,11 @@
     </section>
 
     <script>
-        // Automatically play audio as soon as the page loads
-        window.onload = function() {
+        // Play audio when the user clicks anywhere on the page
+        document.body.addEventListener('click', function() {
             var audio = document.getElementById('auto-play-audio');
             audio.play();
-        };
+        });
     </script>
 </body>
 </html>
