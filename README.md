@@ -12,9 +12,3 @@ This project hosts a bot status preview website using GitHub Pages.
 - Displays real-time bot status
 - Hosted on GitHub Pages
 - Clean UI/UX for easy navigation
-
-## 🛠️ How to Contribute
-1. Fork this repository
-2. Clone your fork:  
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/TEAM-DLK.github.io.git
