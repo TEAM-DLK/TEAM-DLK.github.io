@@ -17,8 +17,20 @@
             text-align: center;
             padding: 20px;
         }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
         section {
             padding: 20px;
+            margin-top: 10px;
         }
         h2 {
             color: #333;
@@ -52,7 +64,14 @@
         </div>
     </header>
 
-    <section>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#social">Social Links</a>
+        <a href="#bots">My Bots</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
         <h2>About Me</h2>
         <p>Hi, I'm Dhananjaya Madhusanka, also known as DLK DEVELOPER. I'm a music producer, Telegram bot developer, and website developer from Sri Lanka. I'm passionate about creating cool bots and music remixes!</p>
         <p><strong>Birthday:</strong> April 20, 2002</p>
@@ -60,7 +79,7 @@
         <p><strong>Location:</strong> Sri Lanka 🇱🇰</p>
     </section>
 
-    <section class="social-links">
+    <section id="social">
         <h2>Follow Me</h2>
         <a href="https://t.me/DLKDevelopers">Telegram Channel</a>
         <a href="https://github.com/TEAM-DLK">GitHub</a>
@@ -70,7 +89,7 @@
         <a href="https://on.soundcloud.com/VnSXer1z4AdeeZVP7">SoundCloud</a>
     </section>
 
-    <section class="bot-list">
+    <section id="bots" class="bot-list">
         <h2>My Telegram Bots</h2>
         <ul>
             <li><a href="https://t.me/LISAv1BOT">LISAv1BOT</a></li>
@@ -79,7 +98,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:prodoozy@icloud.com">prodoozy@icloud.com</a></p>
     </section>
