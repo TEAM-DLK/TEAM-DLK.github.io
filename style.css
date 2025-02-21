@@ -19,16 +19,19 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
+    flex-wrap: wrap;
 }
 
 header .logo img {
     width: 50px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin-left: auto;
 }
 
 nav ul li {
@@ -41,6 +44,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
     height: 100vh;
     background-image: url('https://via.placeholder.com/1500x800'); /* Replace with your image */
@@ -71,6 +75,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
+/* Sections */
 section {
     padding: 60px 20px;
     text-align: center;
@@ -80,15 +85,7 @@ section#home {
     margin-top: 60px; /* to avoid being hidden behind the fixed navbar */
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -99,4 +96,63 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Make the navigation bar items stack on small screens */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .hero .btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    .hero .btn {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
 }
