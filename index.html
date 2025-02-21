@@ -115,6 +115,23 @@
             var audio = document.getElementById('auto-play-audio');
             audio.play();
         });
+
+        // Open links in Google Chrome
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link action
+                var url = this.href;
+                var chromeUrl = "googlechrome://" + url.replace(/^https?:\/\//, '');
+                
+                // Try opening in Chrome
+                window.location.href = chromeUrl;
+
+                // Fallback to normal browser if Chrome is not installed
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 500);
+            });
+        });
     </script>
 </body>
 </html>
