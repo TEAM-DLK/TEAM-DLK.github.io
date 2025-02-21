@@ -53,8 +53,8 @@
     </style>
 </head>
 <body>
-    <!-- Auto-play audio -->
-    <audio autoplay>
+    <!-- Hidden audio element -->
+    <audio id="auto-play-audio" preload="auto">
         <source src="https://files.catbox.moe/4hhyom.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -99,5 +99,13 @@
         <h2>Contact</h2>
         <p>EMAIL: <a href="mailto:prodoozy@icloud.com">prodoozy@icloud.com</a></p>
     </section>
+
+    <script>
+        // Play audio when the user clicks anywhere on the page
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('auto-play-audio');
+            audio.play();
+        });
+    </script>
 </body>
 </html>
